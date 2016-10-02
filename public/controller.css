@@ -1,0 +1,155 @@
+*{
+  font-family: Arial;
+  color:#222;
+}
+
+body{
+  max-width:500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+#debug {
+  background-color: #ddd;
+  padding:10px;
+  text-align:center;
+  margin-top:30px;
+}
+
+.indicator-container{
+  display: inline-block;
+  margin-right:20px;
+}
+.indicator {
+  display: inline-block;
+  width:15px;
+  height:15px;
+  border-radius: 50%;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+
+label {
+  font-size: 1.5em;
+}
+form #text {
+  font-size: 2em;
+  height:40px;
+  width:80%;
+}
+form #send {
+  font-size: 1em;
+  height:30px;
+}
+form .direction {
+  font-size:10em;
+}
+form .slider {
+  width:100%;
+}
+form .slider-guide {
+  font-size:1.3em;
+}
+form .switch-field {
+  overflow: hidden;
+}
+
+form .switch-field input {
+  display: none;
+}
+
+form .switch-field label {
+  float: left;
+  display: inline-block;
+  width: 60px;
+  background-color: #e4e4e4;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+}
+
+form .switch-field label:hover {
+  cursor: pointer;
+}
+form .switch-field input:checked + label {
+  background-color: #A5DC86;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+form input[type=range]{
+  -webkit-appearance: none;
+}
+
+form input[type=range]::-webkit-slider-runnable-track {
+  height: 10px;
+  background: #ddd;
+  border: none;
+}
+
+form input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: goldenrod;
+  margin-top: -10px;
+}
+
+form input[type=range]::-moz-range-track {
+  height: 10px;
+  background: #ddd;
+  border: none;
+}
+
+form input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: goldenrod;
+  margin-top: -10px;
+}
+
+form input[type=range]:focus {
+  outline: none;
+}
+
+form input[type=range]::-ms-track {
+  height: 10px;
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 6px 0;
+
+  /*remove default tick marks*/
+  color: transparent;
+}
+
+form input[type=range]::-ms-thumb {
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: goldenrod;
+}
+
+form > div {
+  padding-bottom: 30px;
+}
+form label {
+  display: block;
+}
